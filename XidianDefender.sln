@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XidianDefender", "Assembly-CSharp-firstpass.csproj", "{EAD16456-1620-E1F4-48FE-D1FA53DF304E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{7986B2B8-781C-BDB2-39BF-940488733391}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XidianDefender", "Assembly-CSharp.csproj", "{7986B2B8-781C-BDB2-39BF-940488733391}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{EAD16456-1620-E1F4-48FE-D1FA53DF304E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EAD16456-1620-E1F4-48FE-D1FA53DF304E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EAD16456-1620-E1F4-48FE-D1FA53DF304E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EAD16456-1620-E1F4-48FE-D1FA53DF304E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EAD16456-1620-E1F4-48FE-D1FA53DF304E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7986B2B8-781C-BDB2-39BF-940488733391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7986B2B8-781C-BDB2-39BF-940488733391}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7986B2B8-781C-BDB2-39BF-940488733391}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7986B2B8-781C-BDB2-39BF-940488733391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD16456-1620-E1F4-48FE-D1FA53DF304E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD16456-1620-E1F4-48FE-D1FA53DF304E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD16456-1620-E1F4-48FE-D1FA53DF304E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD16456-1620-E1F4-48FE-D1FA53DF304E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
