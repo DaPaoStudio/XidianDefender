@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Assets.Scripts.Framework.MVC
+public abstract class Model
 {
-    class Model
+    public abstract string Name { get; }
+
+    protected void SendEvent(string eventName,object data = null)
     {
+        MVC.SendEvent(eventName, data);
     }
 }
