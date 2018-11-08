@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-public abstract class View:MonoBehaviour
+public abstract class View : MonoBehaviour
 {
     //视图标识
     public abstract string Name { get; }
@@ -20,7 +20,7 @@ public abstract class View:MonoBehaviour
 
     //事件处理函数
     public abstract void HandleEvent(string eventName, object data);
-    
+
     //获取模型
     protected T GetModel<T>()
         where T : Model
@@ -29,7 +29,7 @@ public abstract class View:MonoBehaviour
     }
 
     //发送消息
-    protected void SendEvent(string eventName,object data = null)
+    protected void SendEvent(string eventName, object data = null)
     {
         MVC.SendEvent(eventName, data);
     }

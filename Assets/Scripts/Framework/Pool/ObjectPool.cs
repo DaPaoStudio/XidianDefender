@@ -37,7 +37,7 @@ public class ObjectPool :Singleton <ObjectPool>
     }
 
     //回收所有对象
-    public void UnspwanAll()
+    public void UnspawnAll()
     {
         foreach (SubPool p in m_pools.Values)
             p.UnspawnAll();

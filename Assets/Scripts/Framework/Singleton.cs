@@ -1,13 +1,14 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
-public abstract class Singleton<T> : MonoBehaviour //Singleton的泛型集合
-    where T : MonoBehaviour                        //对泛型进行类型约束：必须继承于MonoBehaviour
+public abstract class Singleton<T> : MonoBehaviour
+    where T : MonoBehaviour
 {
     private static T m_instance = null;
 
-    private static T Instance
+    public static T Instance
     {
         get { return m_instance; }
     }
