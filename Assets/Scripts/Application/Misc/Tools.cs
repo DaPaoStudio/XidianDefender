@@ -92,7 +92,7 @@ public class Tools
         sb.AppendLine(string.Format("<CardImage>{0}</CardImage>", level.CardImage));
         //sb.AppendLine(string.Format("<Background>{0}</Background>", level.Background));
         //sb.AppendLine(string.Format("<Road>{0}</Road>", level.Road));
-        sb.AppendLine(string.Format("<Road>{0}</Map>", level.Map));
+        sb.AppendLine(string.Format("<Map>{0}</Map>", level.Map));
         sb.AppendLine(string.Format("<InitScore>{0}</InitScore>", level.InitScore));
 
         sb.AppendLine("<Holder>");

@@ -7,9 +7,9 @@ using UnityEngine;
 public static class Consts
 {
     //目录
-    public static readonly string LevelDir = Application.dataPath + @"\StreamingAssets\Levels";
-    public static readonly string MapDir = Application.dataPath + @"\StreamingAssets\Maps";
-    public static readonly string CardDir = Application.dataPath + @"\StreamingAssets\Res\Cards";
+    public static readonly string LevelDir = Application.dataPath + @"\Resources\Levels";
+    public static readonly string MapDir = Application.dataPath + @"\Resources\Maps";
+    public static readonly string CardDir = Application.dataPath + @"\Resources\Cards";
 
     //参数
     public const string GameProgress = "GameProgress";
