@@ -23,7 +23,7 @@ public class GameModel : Model
     int m_PlayLevelIndex = -1;
 
     //游戏当前金币
-    int m_gold = 0;
+    int m_gold = 100;
 
     //是否游戏中
     bool m_IsPlaying = false;

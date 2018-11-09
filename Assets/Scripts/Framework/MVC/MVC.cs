@@ -5,11 +5,11 @@ using System.Text;
 
 public static class MVC
 {
-    //储存MVC
-    public static Dictionary<string, Model> Models = new Dictionary<string, Model>();       //名字---模型
-    public static Dictionary<string, View> Views = new Dictionary<string, View>();          //名字---视图
-    public static Dictionary<string, Type> CommandMap = new Dictionary<string, Type>();     //事件名字---控制器类型
-    
+    //存储MVC
+    public static Dictionary<string, Model> Models = new Dictionary<string, Model>(); //名字---模型
+    public static Dictionary<string, View> Views = new Dictionary<string, View>();//名字---视图
+    public static Dictionary<string, Type> CommandMap = new Dictionary<string, Type>();//事件名字---控制器类型
+
     //注册
     public static void RegisterModel(Model model)
     {
@@ -29,7 +29,7 @@ public static class MVC
         Views[view.Name] = view;
     }
 
-    public static void RegisterController(string eventName,Type controllerType)
+    public static void RegisterController(string eventName, Type controllerType)
     {
         CommandMap[eventName] = controllerType;
     }
@@ -58,7 +58,7 @@ public static class MVC
     }
 
     //发送事件
-    public static void SendEvent(string eventName,object data = null)
+    public static void SendEvent(string eventName, object data = null)
     {
         //控制器响应事件
         if (CommandMap.ContainsKey(eventName))
@@ -70,7 +70,7 @@ public static class MVC
         }
 
         //视图响应事件
-        foreach(View v in Views.Values)
+        foreach (View v in Views.Values)
         {
             if (v.AttentionEvents.Contains(eventName))
             {
