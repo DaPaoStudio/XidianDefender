@@ -13,6 +13,7 @@ public class UIComplete : View
     #region 字段
     public Button BtnSelect;
     public Button BtnClear;
+    public Button BtnAlbum;
     #endregion
 
     #region 属性

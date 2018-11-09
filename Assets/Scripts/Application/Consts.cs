@@ -32,6 +32,7 @@ public static class Consts
     public const string V_Complete = "V_Complete";
     public const string V_Spanwner = "V_Spanwner";
     public const string V_TowerPopup = "V_TowerPopup";
+    public const string V_Album = "V_Album";
 
 
     //Controller

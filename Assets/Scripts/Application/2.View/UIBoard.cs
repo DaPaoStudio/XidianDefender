@@ -21,6 +21,7 @@ public class UIBoard : View
     public Button btnResume;
     public Button btnPause;
     public Button btnSystem;
+    public Image uiSystem;
 
     bool m_IsPlaying = false;
     GameSpeed m_Speed = GameSpeed.One;
@@ -113,7 +114,8 @@ public class UIBoard : View
     public void OnSystemClick()
     {
         //等待修改
-        // UISystem.isDisplay = true;
+        IsPlaying = false;
+        uiSystem.gameObject.SetActive(true);
         //SendEvent(Consts.E_ShowSystem);
     }
 

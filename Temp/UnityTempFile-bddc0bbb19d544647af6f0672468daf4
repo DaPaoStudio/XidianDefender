@@ -2,8 +2,9 @@
 -target:library
 -nowarn:0169
 -langversion:4
--out:Temp/Unity.TextMeshPro.dll
+-out:Temp/Assembly-CSharp-Editor.dll
 -nostdlib
+-r:Library/ScriptAssemblies/Assembly-CSharp.dll
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -37,6 +38,7 @@
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.StreamingModule.dll"
@@ -66,8 +68,16 @@
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/Unity.Locator.dll"
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+-r:Library/ScriptAssemblies/UnityEditor.StandardEvents.dll
+-r:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+-r:Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+-r:Library/ScriptAssemblies/Unity.TextMeshPro.dll
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll"
@@ -88,15 +98,15 @@
 -r:C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll
 -r:C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
 -r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
--r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\mscorlib.dll"
--r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.dll"
--r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Core.dll"
--r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Runtime.Serialization.dll"
--r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.dll"
--r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.Linq.dll"
--r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.dll"
--r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.Lang.dll"
--r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\Boo.Lang.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.Linq.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.Lang.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\Boo.Lang.dll"
 -define:UNITY_5_3_OR_NEWER
 -define:UNITY_5_4_OR_NEWER
 -define:UNITY_5_5_OR_NEWER
@@ -107,12 +117,11 @@
 -define:UNITY_2017_4_OR_NEWER
 -define:UNITY_2018_1_OR_NEWER
 -define:UNITY_2018_2_OR_NEWER
--define:UNITY_2018_2_13
+-define:UNITY_2018_2_14
 -define:UNITY_2018_2
 -define:UNITY_2018
 -define:PLATFORM_ARCH_64
 -define:UNITY_64
--define:UNITY_ANALYTICS
 -define:ENABLE_AUDIO
 -define:ENABLE_CACHING
 -define:ENABLE_CLOTH
@@ -195,49 +204,5 @@
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/FastAction.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/MaterialReferenceManager.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/PackageResourceImporterWindow.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TextContainer.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TextMeshPro.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TextMeshProUGUI.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_Asset.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_ColorGradient.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_Compatibility.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_CoroutineTween.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_DefaultControls.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_Dropdown.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_FontAsset.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_InputField.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_InputValidator.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_LineInfo.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_ListPool.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_MaterialManager.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_MeshInfo.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_ObjectPool.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_ScrollbarEventHandler.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_SelectionCaret.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_Settings.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_Sprite.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_SpriteAnimator.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_SpriteAsset.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_SpriteAssetImportFormats.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_Style.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_StyleSheet.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_SubMesh.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_SubMeshUI.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_Text.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_TextElement.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_TextInfo.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_TextUtilities.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_UpdateManager.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_UpdateRegistery.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMP_XmlTagStack.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMPro_EventManager.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMPro_ExtensionMethods.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMPro_FontUtilities.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMPro_MeshUtilities.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMPro_Private.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMPro_ShaderUtilities.cs
-C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TMPro_UGUI_Private.cs
--lib:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity"
+Assets/Editor/MapEditor.cs
+-lib:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api"

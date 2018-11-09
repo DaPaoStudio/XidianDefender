@@ -4,7 +4,6 @@
 -langversion:4
 -out:Temp/Assembly-CSharp.dll
 -nostdlib
--r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -67,6 +66,7 @@
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/Unity.Locator.dll"
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
 -r:Library/ScriptAssemblies/UnityEditor.StandardEvents.dll
 -r:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
 -r:Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
@@ -98,12 +98,11 @@
 -define:UNITY_2017_4_OR_NEWER
 -define:UNITY_2018_1_OR_NEWER
 -define:UNITY_2018_2_OR_NEWER
--define:UNITY_2018_2_13
+-define:UNITY_2018_2_14
 -define:UNITY_2018_2
 -define:UNITY_2018
 -define:PLATFORM_ARCH_64
 -define:UNITY_64
--define:UNITY_ANALYTICS
 -define:ENABLE_AUDIO
 -define:ENABLE_CACHING
 -define:ENABLE_CLOTH
@@ -186,9 +185,79 @@
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
+Assets/Scripts/Application/1.Model/GameModel.cs
+Assets/Scripts/Application/1.Model/RoundModel.cs
+Assets/Scripts/Application/2.View/Spawner.cs
+Assets/Scripts/Application/2.View/TowerPopup/SellIcon.cs
+Assets/Scripts/Application/2.View/TowerPopup/SpawnIcon.cs
+Assets/Scripts/Application/2.View/TowerPopup/SpawnPanel.cs
+Assets/Scripts/Application/2.View/TowerPopup/TowerPopup.cs
+Assets/Scripts/Application/2.View/TowerPopup/UpgradeIcon.cs
+Assets/Scripts/Application/2.View/TowerPopup/UpgradePanel.cs
+Assets/Scripts/Application/2.View/UIAlbum.cs
+Assets/Scripts/Application/2.View/UIBoard.cs
+Assets/Scripts/Application/2.View/UICard.cs
+Assets/Scripts/Application/2.View/UIComplete.cs
+Assets/Scripts/Application/2.View/UICountDown.cs
+Assets/Scripts/Application/2.View/UILost.cs
+Assets/Scripts/Application/2.View/UISelect.cs
+Assets/Scripts/Application/2.View/UIStart.cs
+Assets/Scripts/Application/2.View/UISystem.cs
+Assets/Scripts/Application/2.View/UIWin.cs
+Assets/Scripts/Application/3.Controller/CountDownCompleteCommand.cs
+Assets/Scripts/Application/3.Controller/EndLevelCommand.cs
+Assets/Scripts/Application/3.Controller/EnterSceneCommand.cs
+Assets/Scripts/Application/3.Controller/ExitSceneCommand.cs
+Assets/Scripts/Application/3.Controller/SellTowerCommand.cs
+Assets/Scripts/Application/3.Controller/ShowSystemMenuCommand.cs
+Assets/Scripts/Application/3.Controller/StartLevelCommand.cs
+Assets/Scripts/Application/3.Controller/StartUpCommand.cs
+Assets/Scripts/Application/3.Controller/UpgradeTowerCommand.cs
+Assets/Scripts/Application/Args/EndLevelArgs.cs
+Assets/Scripts/Application/Args/SceneArgs.cs
+Assets/Scripts/Application/Args/SellTowerArgs.cs
+Assets/Scripts/Application/Args/ShowCreateArgs.cs
+Assets/Scripts/Application/Args/ShowUpgradeArgs.cs
+Assets/Scripts/Application/Args/SpawnMonsterArgs.cs
+Assets/Scripts/Application/Args/SpawnTowerArgs.cs
+Assets/Scripts/Application/Args/StartLevelArgs.cs
+Assets/Scripts/Application/Args/StartRoundArgs.cs
+Assets/Scripts/Application/Args/UpgradeTowerArgs.cs
+Assets/Scripts/Application/Consts.cs
+Assets/Scripts/Application/Data/Card.cs
+Assets/Scripts/Application/Data/Level.cs
+Assets/Scripts/Application/Data/Point.cs
+Assets/Scripts/Application/Data/Round.cs
+Assets/Scripts/Application/Data/Tile.cs
+Assets/Scripts/Application/Game.cs
+Assets/Scripts/Application/Misc/Rotate.cs
+Assets/Scripts/Application/Misc/Saver.cs
+Assets/Scripts/Application/Misc/TextFlash.cs
+Assets/Scripts/Application/Misc/Tools.cs
+Assets/Scripts/Application/Object/BallBullet.cs
+Assets/Scripts/Application/Object/Bottle.cs
+Assets/Scripts/Application/Object/Bullet.cs
+Assets/Scripts/Application/Object/Fan.cs
+Assets/Scripts/Application/Object/FanBullet.cs
+Assets/Scripts/Application/Object/Luobo.cs
+Assets/Scripts/Application/Object/Map.cs
+Assets/Scripts/Application/Object/Monster.cs
+Assets/Scripts/Application/Object/Role.cs
+Assets/Scripts/Application/Object/Tower.cs
+Assets/Scripts/Application/StaticData/BulletInfo.cs
+Assets/Scripts/Application/StaticData/LuoboInfo.cs
+Assets/Scripts/Application/StaticData/MonsterInfo.cs
+Assets/Scripts/Application/StaticData/StaticData.cs
+Assets/Scripts/Application/StaticData/TowerInfo.cs
+Assets/Scripts/Framework/MVC/ApplicationBase.cs
+Assets/Scripts/Framework/MVC/Controller.cs
+Assets/Scripts/Framework/MVC/Model.cs
+Assets/Scripts/Framework/MVC/MVC.cs
+Assets/Scripts/Framework/MVC/View.cs
 Assets/Scripts/Framework/Pool/IReusable.cs
 Assets/Scripts/Framework/Pool/ObjectPool.cs
 Assets/Scripts/Framework/Pool/ReusableObject.cs
 Assets/Scripts/Framework/Pool/SubPool.cs
 Assets/Scripts/Framework/Singleton.cs
+Assets/Scripts/Framework/Sound/Sound.cs
 -lib:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity"

@@ -953,8 +953,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttentionEvents: []
-  BtnSelect: {fileID: 0}
-  BtnClear: {fileID: 0}
+  BtnSelect: {fileID: 1384099702}
+  BtnClear: {fileID: 55040334}
+  BtnAlbum: {fileID: 1547203660}
 --- !u!1 &1687917146
 GameObject:
   m_ObjectHideFlags: 0

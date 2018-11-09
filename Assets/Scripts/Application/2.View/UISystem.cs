@@ -50,7 +50,10 @@ public class UISystem : View
 
     public void OnRestartClick()
     {
+        GameModel gm = GetModel<GameModel>();
 
+        StartLevelArgs e = new StartLevelArgs() { LevelIndex = gm.PlayLevelIndex };
+        SendEvent(Consts.E_StartLevel, e);
     }
 
     public void OnSelectClick()

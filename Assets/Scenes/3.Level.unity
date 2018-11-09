@@ -483,6 +483,7 @@ MonoBehaviour:
   btnResume: {fileID: 135338834}
   btnPause: {fileID: 443894739}
   btnSystem: {fileID: 2107130519}
+  uiSystem: {fileID: 721469578}
 --- !u!1 &443894737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,7 +1072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.43529412}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.63529414}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1356,7 +1357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.43529412}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.63529414}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1733,6 +1734,16 @@ Prefab:
         type: 2}
       propertyPath: DrawGizmos
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212973437771627464, guid: ff158b52d112ebe408196079745a2cae,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1672715555
+      objectReference: {fileID: 0}
+    - target: {fileID: 212973437771627464, guid: ff158b52d112ebe408196079745a2cae,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff158b52d112ebe408196079745a2cae, type: 2}
@@ -2954,7 +2965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.43529412}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.63529414}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4109,6 +4120,17 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 721469580}
+        m_MethodName: OnResumeClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 397891243}
         m_MethodName: OnResumeClick
         m_Mode: 1
         m_Arguments:

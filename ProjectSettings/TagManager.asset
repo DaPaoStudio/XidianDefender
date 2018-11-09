@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Map
+    uniqueID: 1672715555
+    locked: 0
+  - name: Quin
+    uniqueID: 2205890329
+    locked: 0
+  - name: Monster
+    uniqueID: 2716900629
+    locked: 0
+  - name: Tower
+    uniqueID: 2771086191
+    locked: 0
+  - name: Bullet
+    uniqueID: 3643504417
+    locked: 0
+  - name: Effect
+    uniqueID: 3381944987
+    locked: 0

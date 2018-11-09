@@ -14,6 +14,7 @@ public class UISelect : View
 
     #region 字段
     public Button btnStart;
+    public Image Lock;
     public Button btnBack;
     public Button btnHelp;
     public Button btnNoRua;
@@ -127,6 +128,7 @@ public class UISelect : View
 
         //当前开始按钮
         btnStart.gameObject.SetActive(!m_Cards[current].IsLocked);
+        Lock.gameObject.SetActive(m_Cards[current].IsLocked);
 
         //右边
         if (right >= m_Cards.Count)
