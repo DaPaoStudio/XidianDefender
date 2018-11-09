@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
+//等待修改
 public class StaticData : Singleton<StaticData>
 {
     //Dictionary<int, LuoboInfo> m_Luobos = new Dictionary<int, LuoboInfo>();

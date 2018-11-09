@@ -61,20 +61,46 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Application\1.Model\GameModel.cs" />
+    <Compile Include="Assets\Scripts\Application\1.Model\RoundModel.cs" />
+    <Compile Include="Assets\Scripts\Application\2.View\TowerPopup\SellIcon.cs" />
+    <Compile Include="Assets\Scripts\Application\2.View\TowerPopup\SpawnIcon.cs" />
+    <Compile Include="Assets\Scripts\Application\2.View\TowerPopup\SpawnPanel.cs" />
+    <Compile Include="Assets\Scripts\Application\2.View\TowerPopup\TowerPopup.cs" />
+    <Compile Include="Assets\Scripts\Application\2.View\TowerPopup\UpgradeIcon.cs" />
+    <Compile Include="Assets\Scripts\Application\2.View\TowerPopup\UpgradePanel.cs" />
+    <Compile Include="Assets\Scripts\Application\2.View\UIAlbum.cs" />
+    <Compile Include="Assets\Scripts\Application\2.View\UIBoard.cs" />
+    <Compile Include="Assets\Scripts\Application\2.View\UICard.cs" />
+    <Compile Include="Assets\Scripts\Application\2.View\UIComplete.cs" />
+    <Compile Include="Assets\Scripts\Application\2.View\UICountDown.cs" />
+    <Compile Include="Assets\Scripts\Application\2.View\UILost.cs" />
     <Compile Include="Assets\Scripts\Application\2.View\UISelect.cs" />
     <Compile Include="Assets\Scripts\Application\2.View\UIStart.cs" />
+    <Compile Include="Assets\Scripts\Application\2.View\UISystem.cs" />
+    <Compile Include="Assets\Scripts\Application\2.View\UIWin.cs" />
+    <Compile Include="Assets\Scripts\Application\3.Controller\CountDownCompleteCommand.cs" />
+    <Compile Include="Assets\Scripts\Application\3.Controller\EndLevelCommand.cs" />
     <Compile Include="Assets\Scripts\Application\3.Controller\EnterSceneCommand.cs" />
     <Compile Include="Assets\Scripts\Application\3.Controller\ExitSceneCommand.cs" />
+    <Compile Include="Assets\Scripts\Application\3.Controller\ShowSystemMenuCommand.cs" />
+    <Compile Include="Assets\Scripts\Application\3.Controller\StartLevelCommand.cs" />
     <Compile Include="Assets\Scripts\Application\3.Controller\StartUpCommand.cs" />
     <Compile Include="Assets\Scripts\Application\Args\EndLevelArgs.cs" />
     <Compile Include="Assets\Scripts\Application\Args\SceneArgs.cs" />
+    <Compile Include="Assets\Scripts\Application\Args\SpawnMonsterArgs.cs" />
     <Compile Include="Assets\Scripts\Application\Args\StartLevelArgs.cs" />
+    <Compile Include="Assets\Scripts\Application\Args\StartRoundArgs.cs" />
     <Compile Include="Assets\Scripts\Application\Consts.cs" />
+    <Compile Include="Assets\Scripts\Application\Data\Card.cs" />
     <Compile Include="Assets\Scripts\Application\Data\Level.cs" />
     <Compile Include="Assets\Scripts\Application\Data\Point.cs" />
     <Compile Include="Assets\Scripts\Application\Data\Round.cs" />
     <Compile Include="Assets\Scripts\Application\Data\Tile.cs" />
     <Compile Include="Assets\Scripts\Application\Game.cs" />
+    <Compile Include="Assets\Scripts\Application\Misc\Rotate.cs" />
+    <Compile Include="Assets\Scripts\Application\Misc\Saver.cs" />
+    <Compile Include="Assets\Scripts\Application\Misc\TextFlash.cs" />
     <Compile Include="Assets\Scripts\Application\Misc\Tools.cs" />
     <Compile Include="Assets\Scripts\Application\Object\Map.cs" />
     <Compile Include="Assets\Scripts\Application\StaticData\StaticData.cs" />
@@ -89,7 +115,11 @@
     <Compile Include="Assets\Scripts\Framework\Pool\SubPool.cs" />
     <Compile Include="Assets\Scripts\Framework\Singleton.cs" />
     <Compile Include="Assets\Scripts\Framework\Sound\Sound.cs" />
+    <None Include="Assets\Resources\Levels\level3.xml" />
+    <None Include="Assets\Resources\Levels\level2.xml" />
+    <None Include="Assets\Resources\Levels\level0.xml" />
     <None Include="Assets\Resources\Levels\level1.xml" />
+    <None Include="Assets\Resources\Levels\level4.xml" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/U3D/XidianDefender/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -301,10 +331,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/msi-pc/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>C:/Users/Z/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/msi-pc/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

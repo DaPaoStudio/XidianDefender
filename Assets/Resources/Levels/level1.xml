@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Level>
-	<Name>第一关：敌人来袭</Name>
-	<CardImage>card0.png</CardImage>
+	<Name>第二关：敌人来袭</Name>
+	<CardImage>card1.png</CardImage>
 	<Map>map1.jpg</Map>
 	<InitScore>10</InitScore>
 	<Holder>
+		<Point X="1" Y="0" />
 		<Point X="12" Y="0" />
 		<Point X="13" Y="0" />
 		<Point X="15" Y="0" />
