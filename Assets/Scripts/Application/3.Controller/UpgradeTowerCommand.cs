@@ -9,6 +9,8 @@ public class UpgradeTowerCommand : Controller
     {
         UpgradeTowerArgs e = data as UpgradeTowerArgs;
         Tower tower = e.tower;
+        GameModel gm = GetModel<GameModel>();
+        gm.Gold -= tower.Level * tower.BasePrice;
         tower.Level++;
     }
 }

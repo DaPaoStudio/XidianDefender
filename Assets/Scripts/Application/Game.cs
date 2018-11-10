@@ -43,7 +43,7 @@ public class Game : ApplicationBase<Game>
     //游戏入口
     void Start()
     {
-        Screen.SetResolution(960, 640, false);
+        Screen.SetResolution(1920, 1080, false);
 
         //确保Game对象一直存在
         Object.DontDestroyOnLoad(this.gameObject);

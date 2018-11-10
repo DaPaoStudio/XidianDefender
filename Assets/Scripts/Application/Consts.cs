@@ -7,9 +7,12 @@ using UnityEngine;
 public static class Consts
 {
     //目录
-    public static readonly string LevelDir = Application.dataPath + @"\Resources\Levels";
-    public static readonly string MapDir = Application.dataPath + @"\Resources\Maps";
-    public static readonly string CardDir = Application.dataPath + @"\Resources\Cards";
+    public static readonly string LevelDir = Application.dataPath + @"\StreamingAssets\Resources\Levels";
+    public static readonly string MapDir = Application.dataPath + @"\StreamingAssets\Resources\Maps";
+    public static readonly string CardDir = Application.dataPath + @"\StreamingAssets\Resources\Cards";
+    //public static readonly string LevelDir = "jar:file://" + Application.dataPath + "!/assets/Resources/Levels";
+    //public static readonly string MapDir = "jar:file://" + Application.dataPath + "!/assets/Resources/Maps";
+    //public static readonly string CardDir = "jar:file://" + Application.dataPath + "!/assets/Resources/Cards";
 
     //参数
     public const string GameProgress = "GameProgress";

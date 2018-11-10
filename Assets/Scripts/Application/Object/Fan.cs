@@ -5,6 +5,11 @@ public class Fan : Tower
 {
     public int BulletCount = 6;
 
+    public override void LookAt(Monster target)
+    {
+       
+    }
+
     public override void Shot(Monster monster)
     {
         base.Shot(monster);

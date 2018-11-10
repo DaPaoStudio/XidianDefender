@@ -11,6 +11,7 @@ public class StartLevelCommand : Controller
 
         //第一步
         GameModel gModel = GetModel<GameModel>();
+        gModel.Gold = 80;
         gModel.StartLevel(e.LevelIndex);
 
         //第二步

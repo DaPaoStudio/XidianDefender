@@ -63,7 +63,7 @@ public class Map : MonoBehaviour
     {
         set
         {
-            SpriteRenderer render = transform.Find("Map").GetComponent<SpriteRenderer>();
+            SpriteRenderer render = transform.Find("map").GetComponent<SpriteRenderer>();
             StartCoroutine(Tools.LoadImage(value, render));
         }
     }
@@ -120,7 +120,7 @@ public class Map : MonoBehaviour
         this.m_level = level;
 
         //加载图片
-        this.MapImage = "file://" + Consts.MapDir + "/" + level.Map;
+        this.MapImage = "file://" + Consts.MapDir + "/" + level.map;
         //this.RoadImage = "file://" + Consts.MapDir + "/" + level.Road;
 
         //寻路点

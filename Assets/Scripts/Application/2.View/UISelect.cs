@@ -41,11 +41,13 @@ public class UISelect : View
     public void DropMan()
     {
         btnNoRua.gameObject.SetActive(true);
+        Sound.Instance.PlayEffect("shuangdao");
     }
 
     public void Rua()
     {
         btnNoRua.gameObject.SetActive(false);
+        Sound.Instance.PlayEffect("rua");
     }
 
     //选用关卡游戏
@@ -55,8 +57,8 @@ public class UISelect : View
         {
             LevelIndex = m_SelectedIndex
         };
-
         SendEvent(Consts.E_StartLevel, e);
+        Sound.Instance.PlayBg("level");
     }
 
     void LoadCards()

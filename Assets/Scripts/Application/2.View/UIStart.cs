@@ -11,11 +11,13 @@ public class UIStart : View
     public void GotoSelect()
     {
         Game.Instance.LoadScene(2);
+        //Sound.Instance.StopBg;
     }
 
     public void GotoAlbum()
     {
         Game.Instance.LoadScene(5);
+        //Sound.Instance.StopBg;
     }
 
     public override void HandleEvent(string eventName, object data)

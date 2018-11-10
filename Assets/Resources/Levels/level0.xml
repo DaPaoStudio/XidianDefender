@@ -2,7 +2,7 @@
 <Level>
 	<Name>第一关：敌人来袭</Name>
 	<CardImage>card0.png</CardImage>
-	<Map>map1.jpg</Map>
+	<map>map1.jpg</map>
 	<InitScore>10</InitScore>
 	<Holder>
 		<Point X="0" Y="0" />
@@ -51,14 +51,14 @@
 		<Point X="14" Y="2" />
 		<Point X="12" Y="2" />
 		<Point X="12" Y="4" />
-		<Point X="0" Y="4" />
+		<Point X="1" Y="4" />
 	</Path>
 	<Rounds>
 		<Round Monster="0" Count="5" />
-		<Round Monster="1" Count="8" />
-		<Round Monster="2" Count="8" />
-		<Round Monster="3" Count="10" />
-		<Round Monster="4" Count="10" />
-		<Round Monster="5" Count="1" />
+		<Round Monster="1" Count="4" />
+		<Round Monster="2" Count="4" />
+		<Round Monster="3" Count="5" />
+		<Round Monster="4" Count="5" />
+		<Round Monster="5" Count="0" />
 	</Rounds>
 </Level>

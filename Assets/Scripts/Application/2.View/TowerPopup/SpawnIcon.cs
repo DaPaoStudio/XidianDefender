@@ -23,8 +23,8 @@ public class SpawnIcon : MonoBehaviour
         m_Enough = gm.Gold > info.BasePrice;
 
         //图标
-        string path = "Resources/Roles/" + (m_Enough ? info.NormalIcon : info.DisabledIcon);
-        m_Render.sprite = Resources.Load<Sprite>(path);
+        string path = "Resources/UI/HUD/Icon" + (m_Enough ? info.NormalIcon : info.DisabledIcon);
+        //m_Render.sprite = Resources.Load<Sprite>(path);
 
         //本地位置
         Vector3 pos = transform.localPosition;
@@ -34,8 +34,8 @@ public class SpawnIcon : MonoBehaviour
 
     void OnMouseDown()
     {
-        //if (!m_Enough)
-        //return;
+        if (!m_Enough)
+        return;
 
         SpawnTowerArgs e = new SpawnTowerArgs()
         {

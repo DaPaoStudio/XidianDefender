@@ -45,7 +45,12 @@ public class BallBullet : Bullet
             {
                 //敌人受伤
                 Target.Damage(this.Attack);
-
+                if (Target.Hp <= 0)
+                {
+                    Random random = new Random();
+                    GameModel gm = MVC.GetModel<GameModel>();
+                    gm.Gold += Random.Range(5,15);
+                }
                 //爆炸
                 Explode();
             }

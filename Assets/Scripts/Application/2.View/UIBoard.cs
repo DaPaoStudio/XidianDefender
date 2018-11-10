@@ -75,16 +75,29 @@ public class UIBoard : View
     public void UpdateRoundInfo(int currentRound, int totalRound)
     {
         txtCurrent.text = currentRound.ToString("D2");//始终保留2位整数
-        txtTotal.text = totalRound.ToString();
+        txtTotal.text = totalRound.ToString("D2");
+    }
+
+    public void UpdateScore(int score)
+    {
+        txtScore.text = score.ToString("D3");
     }
     #endregion
 
     #region Unity回调
     void Awake()
     {
-        this.Score = 100;
+        this.Score = 80;
         this.IsPlaying = true;
         this.Speed = GameSpeed.One;
+    }
+
+    void Update()
+    {
+        RoundModel rm = GetModel<RoundModel>();
+        GameModel gm = GetModel<GameModel>();
+        UpdateRoundInfo(rm.RoundIndex + 1, rm.RoundTotal);
+        UpdateScore(gm.Gold);
     }
     #endregion
 
@@ -104,19 +117,22 @@ public class UIBoard : View
     public void OnPauseClick()
     {
         IsPlaying = false;
+        Time.timeScale = 0;
     }
 
     public void OnResumeClick()
     {
         IsPlaying = true;
+        if(Speed==GameSpeed.Two)
+            Time.timeScale = 2;
+        else
+            Time.timeScale = 1;
     }
 
     public void OnSystemClick()
     {
-        //等待修改
         IsPlaying = false;
         uiSystem.gameObject.SetActive(true);
-        //SendEvent(Consts.E_ShowSystem);
     }
 
     public override void RegisterEvents()

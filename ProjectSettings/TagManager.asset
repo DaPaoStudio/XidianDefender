@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Monster
   layers:
   - Default
   - TransparentFX
@@ -58,4 +59,7 @@ TagManager:
     locked: 0
   - name: Effect
     uniqueID: 3381944987
+    locked: 0
+  - name: Interaction
+    uniqueID: 2488854341
     locked: 0

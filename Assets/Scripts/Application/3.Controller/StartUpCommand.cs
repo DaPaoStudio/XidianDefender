@@ -20,8 +20,8 @@ public class StartUpCommand : Controller
         
         RegisterController(Consts.E_CountDownComplete, typeof(CountDownCompleteCommand));
 
-        //RegisterController(Consts.E_UpgradeTower, typeof(UpgradeTowerCommand));
-        //RegisterController(Consts.E_SellTower, typeof(SellTowerCommand));
+        RegisterController(Consts.E_UpgradeTower, typeof(UpgradeTowerCommand));
+        RegisterController(Consts.E_SellTower, typeof(SellTowerCommand));
 
         //初始化
         GameModel gModel = GetModel<GameModel>();
@@ -29,5 +29,6 @@ public class StartUpCommand : Controller
 
         //进入开始界面
         Game.Instance.LoadScene(1);
+        Sound.Instance.PlayBg("start");
     }
 }

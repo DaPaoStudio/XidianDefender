@@ -17,7 +17,7 @@ public class Level
     //public string Road;
 
     //地图
-    public string Map;
+    public string map;
 
     //金币
     public int InitScore;

@@ -29,11 +29,11 @@ public class Luobo : Role
         base.Damage(hit);
     }
 
-    protected override void OnDead(Role role)
-    {
-        base.OnDead(role);
-        m_Animator.SetBool("IsDead", true);
-    }
+    //protected override void OnDead(Role role)
+    //{
+    //    base.OnDead(role);
+    //    m_Animator.SetBool("IsDead", true);
+    //}
     #endregion
 
     #region Unity回调
@@ -55,7 +55,7 @@ public class Luobo : Role
     {
         base.OnUnspawn();
         m_Animator.ResetTrigger("IsDamage");
-        m_Animator.SetBool("IsDead", false);
+        //m_Animator.SetBool("IsDead", false);
     }
     #endregion
 

@@ -9,6 +9,14 @@ public class UIAlbum : View
         get { return Consts.V_Album; }
     }
 
+    public Button btnBack;
+
+    public void GoBack()
+    {
+        Game.Instance.LoadScene(1);
+    }
+
+
     public override void HandleEvent(string eventName, object data)
     {
         

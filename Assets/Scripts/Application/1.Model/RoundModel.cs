@@ -6,7 +6,7 @@ public class RoundModel : Model
 {
     #region 常量
     public const float ROUND_INTERVAL = 3f; //回合间隔时间
-    public const float SPAWN_INTERVAL = 1f; //出怪间隔时间
+    public const float SPAWN_INTERVAL = 1.4f; //出怪间隔时间
     #endregion
 
     #region 事件

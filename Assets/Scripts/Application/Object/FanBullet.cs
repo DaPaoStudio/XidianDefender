@@ -42,7 +42,12 @@ public class FanBullet : Bullet
             {
                 //敌人受伤
                 monster.Damage(this.Attack);
-
+                if (monster.Hp <= 0)
+                {
+                    Random random = new Random();
+                    GameModel gm = MVC.GetModel<GameModel>();
+                    gm.Gold += Random.Range(5, 15);
+                }
                 //爆炸
                 Explode();
 

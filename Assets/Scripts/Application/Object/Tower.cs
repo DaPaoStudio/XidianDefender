@@ -93,7 +93,7 @@ public abstract class Tower : ReusableObject
         m_Animator.SetTrigger("IsAttack");
     }
 
-    void LookAt(Monster target)
+    public virtual void LookAt(Monster target)
     {
         if (target == null)
         {

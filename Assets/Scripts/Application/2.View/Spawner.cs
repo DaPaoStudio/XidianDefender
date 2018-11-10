@@ -54,16 +54,19 @@ public class Spawner : View
     {
         //找到Tile
         Tile tile = m_Map.GetTile(position);
-
+        GameModel gModel = GetModel<GameModel>();
         //创建Tower
         TowerInfo info = Game.Instance.StaticData.GetTowerInfo(towerID);
-        GameObject go = Game.Instance.ObjectPool.Spawn(info.PrefabName);
-        Tower tower = go.GetComponent<Tower>();
-        tower.transform.position = position;
-        tower.Load(towerID, tile, m_Map.MapRect);
-
-        //设置Tile数据
-        tile.Data = tower;
+        if (gModel.Gold >= info.BasePrice)
+        {
+            GameObject go = Game.Instance.ObjectPool.Spawn(info.PrefabName);
+            Tower tower = go.GetComponent<Tower>();
+            tower.transform.position = position;
+            tower.Load(towerID, tile, m_Map.MapRect);
+            gModel.Gold -= info.BasePrice;
+            //设置Tile数据
+            tile.Data = tower;
+        }
     }
 
     void monster_HpChanged(int hp, int maxHp)
@@ -103,7 +106,12 @@ public class Spawner : View
     {
         //萝卜掉血
         m_Luobo.Damage(1);
-
+        if (m_Luobo.Hp == 10)
+            Sound.Instance.PlayEffect("rua");
+        if (m_Luobo.Hp == 6)
+            Sound.Instance.PlayEffect("jingle");
+        if (m_Luobo.Hp == 2)
+            Sound.Instance.PlayEffect("rua");
         //怪物死亡
         monster.Hp = 0;
     }

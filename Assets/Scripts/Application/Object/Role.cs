@@ -19,7 +19,6 @@ public abstract class Role : ReusableObject, IReusable
     [SerializeField] int m_Hp;
     [SerializeField] int m_MaxHp;
     #endregion
-
     #region 属性
     public int Hp
     {

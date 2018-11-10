@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Level>
+	<Name>第一关：敌人来袭</Name>
+	<CardImage>card0.png</CardImage>
+	<map>map1.jpg</map>
+	<InitScore>10</InitScore>
+	<Holder>
+		<Point X="0" Y="0" />
+		<Point X="12" Y="0" />
+		<Point X="13" Y="0" />
+		<Point X="15" Y="0" />
+		<Point X="11" Y="1" />
+		<Point X="13" Y="1" />
+		<Point X="0" Y="2" />
+		<Point X="1" Y="2" />
+		<Point X="2" Y="2" />
+		<Point X="3" Y="2" />
+		<Point X="4" Y="2" />
+		<Point X="5" Y="2" />
+		<Point X="6" Y="2" />
+		<Point X="7" Y="2" />
+		<Point X="8" Y="2" />
+		<Point X="9" Y="2" />
+		<Point X="10" Y="2" />
+		<Point X="11" Y="2" />
+		<Point X="15" Y="2" />
+		<Point X="1" Y="3" />
+		<Point X="2" Y="3" />
+		<Point X="4" Y="3" />
+		<Point X="5" Y="3" />
+		<Point X="8" Y="3" />
+		<Point X="10" Y="3" />
+		<Point X="11" Y="3" />
+		<Point X="14" Y="3" />
+		<Point X="15" Y="3" />
+		<Point X="13" Y="4" />
+		<Point X="14" Y="4" />
+		<Point X="1" Y="5" />
+		<Point X="2" Y="5" />
+		<Point X="4" Y="5" />
+		<Point X="5" Y="5" />
+		<Point X="7" Y="5" />
+		<Point X="8" Y="5" />
+		<Point X="10" Y="5" />
+		<Point X="12" Y="5" />
+		<Point X="14" Y="5" />
+	</Holder>
+	<Path>
+		<Point X="15" Y="1" />
+		<Point X="14" Y="1" />
+		<Point X="14" Y="2" />
+		<Point X="12" Y="2" />
+		<Point X="12" Y="4" />
+		<Point X="1" Y="4" />
+	</Path>
+	<Rounds>
+		<Round Monster="0" Count="5" />
+		<Round Monster="1" Count="4" />
+		<Round Monster="2" Count="4" />
+		<Round Monster="3" Count="5" />
+		<Round Monster="4" Count="5" />
+		<Round Monster="5" Count="1" />
+	</Rounds>
+</Level>
