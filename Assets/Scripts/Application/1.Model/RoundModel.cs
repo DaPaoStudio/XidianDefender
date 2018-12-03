@@ -6,7 +6,7 @@ public class RoundModel : Model
 {
     #region 常量
     public const float ROUND_INTERVAL = 3f; //回合间隔时间
-    public const float SPAWN_INTERVAL = 1.4f; //出怪间隔时间
+    public const float SPAWN_INTERVAL = 1.2f; //出怪间隔时间
     #endregion
 
     #region 事件
@@ -79,7 +79,7 @@ public class RoundModel : Model
             for (int k = 0; k < round.Count; k++)
             {
                 //出怪间隙
-                yield return new WaitForSeconds(SPAWN_INTERVAL);
+                yield return new WaitForSeconds(SPAWN_INTERVAL-k/15);
 
                 //出怪事件
                 SpawnMonsterArgs ee = new SpawnMonsterArgs();

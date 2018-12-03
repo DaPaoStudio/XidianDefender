@@ -54,9 +54,9 @@
 		<Point X="1" Y="4" />
 	</Path>
 	<Rounds>
-		<Round Monster="0" Count="1" />
-		<Round Monster="1" Count="1" />
-		<Round Monster="2" Count="1" />
+		<Round Monster="0" Count="3" />
+		<Round Monster="1" Count="5" />
+		<Round Monster="2" Count="6" />
 		<Round Monster="3" Count="10" />
 		<Round Monster="4" Count="10" />
 		<Round Monster="5" Count="1" />

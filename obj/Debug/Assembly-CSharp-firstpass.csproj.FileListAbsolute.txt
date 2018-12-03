@@ -166,3 +166,7 @@ D:\U3D\XidianDefender\obj\Debug\Assembly-CSharp-firstpass.csproj.CoreCompileInpu
 D:\U3D\XidianDefender\obj\Debug\Assembly-CSharp-firstpass.csproj.CopyComplete
 D:\U3D\XidianDefender\obj\Debug\Assembly-CSharp-firstpass.dll
 D:\U3D\XidianDefender\obj\Debug\Assembly-CSharp-firstpass.pdb
+D:\U3D\XidianDefender\Temp\bin\Debug\Assembly-CSharp-firstpass.dll.CodeAnalysisLog.xml
+D:\U3D\XidianDefender\Temp\bin\Debug\Assembly-CSharp-firstpass.dll.lastcodeanalysissucceeded
+D:\U3D\XidianDefender\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.dll
+D:\U3D\XidianDefender\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.xml
